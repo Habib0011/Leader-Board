@@ -112,6 +112,12 @@ hr{
     width: 224px;
    height: 104px;
 }
+.course{
+    border: 10px solid lightgray;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px;
+}
 .fa-star{
     font-size: 12px;
 }
@@ -138,9 +144,14 @@ color: #FFC014;
 
   /* Mobile query */
   @media screen and (max-width:688px) {
-    .container{
-        width: 100%;
+   .container{
+       width: 100%;
+        
     }
+    body{
+        overflow-x: hidden;
+    }
+    
 
     .players,.blogs,.courses{
         grid-template-columns: repeat(1,1fr); 
@@ -155,6 +166,10 @@ color: #FFC014;
   @media  only screen and (min-width:689px) and (max-width:992px) {
     .container{
         width: 100%;
+        
+    }
+    body{
+        overflow-x: hidden;
     }
 
     .players,.courses{
